@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
@@ -29,7 +28,7 @@ import { RouterOutlet } from '@angular/router';
 
   Bithy Islam Chaity<br>
   </div> -->
-  <table>
+  <!-- <table>
     <thead>
       <th>Name</th>
       <th>Age</th>
@@ -48,7 +47,7 @@ import { RouterOutlet } from '@angular/router';
 </tr>
 }
     </tbody>
-  </table>
+  </table> -->
   `,
   styles: `
   .a {
@@ -71,33 +70,32 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title ='Grade';
 
-  Grade = {
-    marks:40
-  };
-  users=[
-  {
-  Name:'Meme',
-  Age:30,
-  city:'Jashore',
-  Country:'Bangladesh',
-  ProfilePicture:"https://placebeard.it/250/250",
-  },
-  {
-  Name:"Omar",
-  Age:27,
-  city:'dhaka',
-  Country:'Bangladesh',
-  ProfilePicture:"https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250",
+  // Grade = {
+  //   marks:40
+  // };
+//   users=[
+//   {
+//   Name:'Meme',
+//   Age:30,
+//   city:'Jashore',
+//   Country:'Bangladesh',
+//   ProfilePicture:"https://placebeard.it/250/250",
+//   },
+//   {
+//   Name:"Omar",
+//   Age:27,
+//   city:'dhaka',
+//   Country:'Bangladesh',
+//   ProfilePicture:"https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250",
 
-  },
-  {
-    Name:"rasel",
-  Age:20,
-  city:'Jashore',
-  Country:'Bangladesh',
-  ProfilePicture:"https://i.pravatar.cc/250?u=mail@ashallendesign.co.uk",
-  },
-];
-
+//   },
+//   {
+//     Name:"rasel",
+//   Age:20,
+//   city:'Jashore',
+//   Country:'Bangladesh',
+//   ProfilePicture:"https://i.pravatar.cc/250?u=mail@ashallendesign.co.uk",
+//   },
+// ];
 }
 
