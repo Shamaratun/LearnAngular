@@ -2,21 +2,15 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import{HeaderComponent} from './header/header.component';
 import{FooterComponent} from'./footer/footer.component';
-import{ContentComponent}from './content/content.component';
+// import{ContentComponent}from './content/content.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, FooterComponent, ContentComponent],
-//  templateUrl: './app.component.html',
-  template:`
-    <div class="container">
-      <app-header></app-header >
-      <app-content></app-content>
-      <!-- <app-component></app-component> -->
-      <app-footer></app-footer>
-
-    </div>
-  `,
+  imports: [HeaderComponent, FooterComponent, RouterOutlet],
+  templateUrl: './app.component.html',
+  // template:`
+    
+  // `,
   styles: `
   .a {
      background:yellow;
@@ -25,7 +19,7 @@ import{ContentComponent}from './content/content.component';
       weidth:150px;
       height:150px;
   }`
-  //styleUrl: './app.component.css'
+  // styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'Forthahw';
