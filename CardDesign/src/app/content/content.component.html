@@ -1,0 +1,63 @@
+<div class="container text-center">
+  <div class="row">
+      <div class="col-md-1">
+          <!-- Space or additional content can be added here -->
+      </div>
+      <!-- Pending Orders Table -->
+      <div class="col-md-6">
+          <div class="contenta">
+              <h6 class="bg-primary text-white">Pending Orders</h6>
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>Date</th>
+                          <th>Reference</th>
+                          <th>Customer</th>
+                          <th>NbItems</th>
+                          <th>Total</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <!-- Loop to display data -->
+                      @for(user of users;track user.Customer){
+                      <tr>
+                          <td style="color: rgb(12, 50, 121);">{{ user.Date }}</td>
+                          <td>{{ user.Reference }}</td>
+                          <td style="color: rgb(12, 50, 121);">{{ user.Customer }}</td>
+                          <td>{{ user.Nb }}</td>
+                          <td>{{ user.Total }}</td>
+                      </tr>
+                      }
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+      <!-- Empty Column for Spacing (Optional) -->
+      
+
+      <!-- Latest Reviews Table -->
+      <div class="col-md-4">
+          <h6 class="bg-primary text-white">Latest Reviews</h6>
+          <table class="table table-striped">
+              <thead>
+                  <tr>
+                      <th>Customer</th>
+                      <th>Product</th>
+                      <th>Ratings</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <!-- Loop to display data -->
+                  @for(user of user;track user.Customer){
+                  <tr>
+                      <td style="color: rgb(12, 50, 121);">{{ user.Customer }}</td>
+                      <td style="color: rgb(12, 50, 121);">{{ user.Product }}</td>
+                      <td>{{ user.Ratings }}</td>
+                  </tr>
+                  }
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
