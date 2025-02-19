@@ -5,7 +5,7 @@ import { RouterOutlet } from '@angular/router';
   imports: [RouterOutlet],
   //  templateUrl: './app.component.html',
    template:`
-     <!-- @if (Grade.marks ==80){
+     @if (Grade.marks ==80){
        <div class="a">{{ Grade.marks }} Grade is A+ </div>
    
      } @else if(Grade.marks <= 79 && Grade.marks >= 70) {
@@ -20,7 +20,7 @@ import { RouterOutlet } from '@angular/router';
       <div class="a">{{ Grade.marks }} Grade is fail </div>
     }
   
-   -->
+  
   <!-- <div class="b">
   Bithy Islam Chaity<br>
 
@@ -70,9 +70,9 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title ='Grade';
 
-  // Grade = {
-  //   marks:40
-  // };
+  Grade = {
+    marks:40
+  };
 //   users=[
 //   {
 //   Name:'Meme',
